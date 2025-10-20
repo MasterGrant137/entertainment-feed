@@ -52,39 +52,41 @@ export const getApplePodcastElements = async (url) => {
   while (index < 20) {
     const podcastItem = items[index];
 
-    console.log(podcastItem)
+    // console.log(podcastItem)
 
-    const { title, content, pubDate, link } = podcastItem;
-    const thumbnail = podcastItem['itunes:image'].$.href;
+    const { title, pubDate, link, enclosure, itunes } = podcastItem;
+    const { image, summary } = itunes;
+
+    console.log(summary)
     
     const wrapper = document.createElement('div');
     const wrapperId = `apple-podcast-element-${index}`;
     wrapper.id = wrapperId;
 
     const thumbnailElement = document.createElement('img');
-    thumbnailElement.innerHTML = `
-      <img 
-        alt="Thumbnail for ${title}" 
-        src="${thumbnail}"
-        height: "100px"
-        width="100px"
-      >
-      </img>
-    `;
+    thumbnailElement.alt=``
+    thumbnailElement.innerHTML = `Thumbnail for ${title}`;
+    thumbnailElement.src=image;
+    thumbnailElement.height=100;
+    thumbnailElement.width=100;
 
     const titleElement = document.createElement('h2');
     titleElement.innerHTML = title;
 
-    const descriptionElement = document.createElement('p');
-    descriptionElement.innerText = content;
+    const summaryElement = document.createElement('p');
+    summaryElement.innerText = he.decode(summary);
 
     const pubDateElement = document.createElement('p');
     pubDateElement.innerText = pubDate;
 
+    const audioElement = document.createElement('audio');
+    audioElement.src = enclosure.url;
+    audioElement.controls = true;
+
     const linkElement = document.createElement('a');
     linkElement.innerHTML = `<a target="_blank" href="${link}">Podcast Link</a>`;
 
-    const elements = [thumbnailElement, titleElement, descriptionElement, pubDateElement, linkElement]
+    const elements = [titleElement, thumbnailElement, summaryElement, pubDateElement, audioElement, linkElement];
     elements.forEach((element) => wrapper.appendChild(element));
 
     container.appendChild(wrapper);

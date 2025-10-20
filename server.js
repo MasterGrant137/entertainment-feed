@@ -26,7 +26,9 @@ app.get('/apple-podcasts/:id', async (clientRequest, serverResponse) => {
   
   const feedUrl = appleApiData.results[0].feedUrl;
   const config = { 
-    customFields: { item: ['itunes:image'] }
+    customFields: { 
+      item: ['itunes']
+    }
   };
 
   const podcastData = await rssParser(feedUrl, config);

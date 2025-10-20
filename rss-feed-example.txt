@@ -1,0 +1,10 @@
+
+
+
+{
+ "resultCount":1,
+ "results": [
+{"wrapperType":"track", "kind":"podcast", "collectionId":1655970197, "trackId":1655970197, "artistName":"Catholic Answers", "collectionName":"Shameless Popery", "trackName":"Shameless Popery", "collectionCensoredName":"Shameless Popery", "trackCensoredName":"Shameless Popery", "collectionViewUrl":"https://podcasts.apple.com/us/podcast/shameless-popery/id1655970197?uo=4", "feedUrl":"https://www.catholic.com/audio/sp/podcast.xml", "trackViewUrl":"https://podcasts.apple.com/us/podcast/shameless-popery/id1655970197?uo=4", "artworkUrl30":"https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/2d/b9/7f/2db97f20-3ebe-26ba-49d4-293d1c9d836b/mza_9411047259414106088.jpg/30x30bb.jpg", "artworkUrl60":"https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/2d/b9/7f/2db97f20-3ebe-26ba-49d4-293d1c9d836b/mza_9411047259414106088.jpg/60x60bb.jpg", "artworkUrl100":"https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/2d/b9/7f/2db97f20-3ebe-26ba-49d4-293d1c9d836b/mza_9411047259414106088.jpg/100x100bb.jpg", "collectionPrice":0.00, "trackPrice":0.00, "collectionHdPrice":0, "releaseDate":"2025-09-23T10:00:00Z", "collectionExplicitness":"notExplicit", "trackExplicitness":"cleaned", "trackCount":100, "country":"USA", "currency":"USD", "primaryGenreName":"Christianity", "contentAdvisoryRating":"Clean", "artworkUrl600":"https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/2d/b9/7f/2db97f20-3ebe-26ba-49d4-293d1c9d836b/mza_9411047259414106088.jpg/600x600bb.jpg", "genreIds":["1439", "26", "1314"], "genres":["Christianity", "Podcasts", "Religion & Spirituality"]}]
+}
+
+

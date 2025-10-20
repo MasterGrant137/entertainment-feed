@@ -56,8 +56,6 @@ export const getApplePodcastElements = async (url) => {
 
     const { title, pubDate, link, enclosure, itunes } = podcastItem;
     const { image, summary } = itunes;
-
-    console.log(summary)
     
     const wrapper = document.createElement('div');
     const wrapperId = `apple-podcast-element-${index}`;

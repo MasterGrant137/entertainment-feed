@@ -74,7 +74,7 @@ export const getApplePodcastElements = async (url) => {
     titleElement.innerHTML = title;
 
     const summaryElement = document.createElement('p');
-    summaryElement.innerText = he.decode(summary);
+    summaryElement.innerText = summary;
 
     const pubDateElement = document.createElement('p');
     pubDateElement.innerText = pubDate;
